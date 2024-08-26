@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_BUILD_TYPE Debug)
 
-add_executable(car_class)
+add_executable(matrix_class)
 
 set(sources 
     src/matrix.h
@@ -19,9 +19,9 @@ set(sources
     src/main.cpp
 )
 
-target_sources(car_class PRIVATE ${sources})
+target_sources(matrix_class PRIVATE ${sources})
 
-target_include_directories(car_class
+target_include_directories(matrix_class
     PUBLIC
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>"    
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>"    
